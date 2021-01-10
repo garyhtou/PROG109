@@ -1,6 +1,24 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+const links = [
+	{
+		title: "Module 01",
+		links: [
+			{ title: "Module Webpage", url: "/module01" },
+			{ title: "Artifact #1", url: "/module01/artifact01.html" },
+		],
+	},
+	{
+		title: "Module 02",
+		links: [{ title: "Module Assignment", url: "/module02" }],
+	},
+	{
+		title: "Module 03",
+		links: [{ title: "Coming Soon!", url: "/" }],
+	},
+];
+
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -17,21 +35,16 @@ export default function Home() {
 				<p className={styles.description}>My name is Gary Tou</p>
 
 				<div className={styles.grid}>
-					<div className={styles.card}>
-						<h3>Module 01</h3>
-						<a href="/module01">
-							<p>Module Webpage &rarr;</p>
-						</a>
-						<a href="/module01/artifact01.html">
-							<p>Artifact #1 &rarr;</p>
-						</a>
-					</div>
-					<div className={styles.card}>
-						<h3>Module 02</h3>
-						<a href="/module02">
-							<p>Module Webpage &rarr;</p>
-						</a>
-					</div>
+					{links.map((card) => (
+						<div className={styles.card}>
+							<h3>{card.title}</h3>
+							{card.links.map((link) => (
+								<a href={link.url}>
+									<p>{link.title} &rarr;</p>
+								</a>
+							))}
+						</div>
+					))}
 				</div>
 			</main>
 
