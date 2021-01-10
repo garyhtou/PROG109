@@ -83,10 +83,15 @@
 	transition: color 0.15s ease, border-color 0.15s ease;
 }
 
+.card a:hover,
+.card a:focus,
+.card a:active {
+	color: #0070f3;
+}
+
 .card:hover,
 .card:focus,
 .card:active {
-	color: #0070f3;
 	border-color: #0070f3;
 }
 

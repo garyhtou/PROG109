@@ -23,7 +23,7 @@ export default function Home() {
 							<p>Module Webpage &rarr;</p>
 						</a>
 						<a href="/module01/artifact01.html">
-							<p>Artifact 01 &rarr;</p>
+							<p>Artifact #1 &rarr;</p>
 						</a>
 					</div>
 					<div className={styles.card}>
