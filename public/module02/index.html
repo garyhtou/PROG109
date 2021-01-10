@@ -7,9 +7,21 @@
 		<meta name="description" content="M02 - Module Assignment" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style>
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+			}
+
 			body {
 				background-color: #eaeff7;
 				font-family: sans-serif;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+				width: 100vw;
+				margin: 0;
 			}
 
 			h1 {
@@ -30,6 +42,24 @@
 				border: 1px solid;
 				padding: 0.5em;
 			}
+
+			.paper {
+				padding: 5em;
+				background-color: #f4f4f4;
+				border-radius: 3em;
+				box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+					0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+					0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+				margin: 3em;
+			}
+
+			@media only screen and (max-width: 600px) {
+				.paper {
+					padding: 1.5em;
+					margin: 1em;
+					border-radius: 1em;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -39,75 +69,77 @@
 				browser to improve your experience.
 			</p>
 		<![endif]-->
-		<table>
-			<thead>
-				<tr>
-					<td colspan="3"><h1>HTML Table Example</h1></td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td style="width: 30vw; text-align: right">
-						<img src="/module02/buffet.jpg" alt="Buffet" /><br />
-						<cite
-							>Photo by
-							<a
-								href="https://unsplash.com/@timmeyer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-								>Tim Meyer</a
-							>
-							on
-							<a
-								href="https://unsplash.com/s/photos/buffet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-								>Unsplash</a
-							>
-						</cite>
-					</td>
-					<td style="width: 8vw">
-						<h2 style="text-align: center">Meal<br />Planner</h2>
-					</td>
-					<td style="width: 12vw"><h2>Recipe Index #:</h2></td>
-				</tr>
-				<tr>
-					<th>Week starting</th>
-					<th>2/15/2018</th>
-					<th>Instructions</th>
-				</tr>
-				<tr>
-					<td><b>Days of the Week</b></td>
-					<td><b>Recipe Name</b></td>
-					<td rowspan="8" style="text-align: center">
-						Add the name of the recipe under the column Recipe Name
-					</td>
-				</tr>
-				<tr>
-					<td>Monday</td>
-					<td>Spinach Feta Pizza</td>
-				</tr>
-				<tr>
-					<td>Tuesday</td>
-					<td>My New Recipe</td>
-				</tr>
-				<tr>
-					<td>Wednesday</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Thursday</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Friday</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Saturday</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Sunday</td>
-					<td></td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="paper">
+			<table>
+				<thead>
+					<tr>
+						<td colspan="3"><h1>HTML Table Example</h1></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width: 30vw; text-align: right">
+							<img src="/module02/buffet.jpg" alt="Buffet" /><br />
+							<cite
+								>Photo by
+								<a
+									href="https://unsplash.com/@timmeyer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+									>Tim Meyer</a
+								>
+								on
+								<a
+									href="https://unsplash.com/s/photos/buffet?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+									>Unsplash</a
+								>
+							</cite>
+						</td>
+						<td style="width: 8vw">
+							<h2 style="text-align: center">Meal<br />Planner</h2>
+						</td>
+						<td style="width: 12vw"><h2>Recipe Index #:</h2></td>
+					</tr>
+					<tr>
+						<th>Week starting</th>
+						<th>2/15/2018</th>
+						<th>Instructions</th>
+					</tr>
+					<tr>
+						<td><b>Days of the Week</b></td>
+						<td><b>Recipe Name</b></td>
+						<td rowspan="8" style="text-align: center">
+							Add the name of the recipe under the column Recipe Name
+						</td>
+					</tr>
+					<tr>
+						<td>Monday</td>
+						<td>Spinach Feta Pizza</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>My New Recipe</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</body>
 </html>
