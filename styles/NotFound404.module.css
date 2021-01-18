@@ -14,8 +14,12 @@
 .container span {
 	font-size: 0.8em;
 }
-.container span:hover {
+.container span a {
+	color: #0070f3;
+}
+.container span a:hover {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 .ufoImageWrapper {

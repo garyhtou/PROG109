@@ -16,7 +16,7 @@ export default function Custom404() {
 			<p>Oh gosh! Something went wrong 😧</p>
 			<h3>404 - Page Not Found</h3>
 			<span>
-				<a href="/">go home</a>
+				go <a href="/">home</a> to find what you're looking for
 			</span>
 		</div>
 	);
