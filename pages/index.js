@@ -15,7 +15,7 @@ const links = [
 	},
 	{
 		title: "Module 03",
-		links: [{ title: "Coming Soon!", url: "/" }],
+		links: [{ title: "Coming Soon!", url: "/module03" }],
 	},
 ];
 
