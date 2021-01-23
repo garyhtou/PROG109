@@ -17,7 +17,7 @@ const links = [
 		title: "Module 03",
 		links: [
 			{ title: "Module Assignment", url: "/module03" },
-			{ title: "Artifact #2 [WIP]!", url: "/chess/chess.html" },
+			{ title: "Artifact #2", url: "/chess" },
 		],
 	},
 ];
