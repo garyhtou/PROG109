@@ -8,15 +8,10 @@ body {
 }
 
 #title {
-	/* position: fixed;
-	top: 0px;
-	left: 0px; */
 	padding: 10px;
-	/* margin: 0.5px 0; */
 	width: 100%;
 	background-color: #2f2f2f;
 	text-align: center;
-	/* z-index: 10; */
 	font-family: "ArgentumNovusRegular";
 	font-weight: normal;
 	font-style: normal;
@@ -26,7 +21,6 @@ body {
 
 #container {
 	margin: 2em auto;
-	/* margin-top: 3.5em; */
 	height: min(70vh, 70vw);
 	width: min(70vh, 70vw);
 	flex-grow: 1;
@@ -40,9 +34,6 @@ body {
 	height: 12.5%;
 	white-space: nowrap;
 	display: flex;
-}
-.clear {
-	clear: both;
 }
 
 .row > div {
