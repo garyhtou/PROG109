@@ -1,0 +1,73 @@
+* {
+	font-family: "CooperHewittBook", sans-serif;
+	color: #caf0f8;
+	text-align: center;
+}
+h1,
+footer p {
+	color: #03045e;
+}
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-image: url("https://images.unsplash.com/photo-1486520299386-6d106b22014b");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#content {
+	overflow: auto;
+}
+nav,
+#feature,
+footer {
+	margin: 1%;
+}
+.column1,
+.column2,
+.column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+}
+.column3 {
+	margin-right: 0%;
+}
+li {
+	display: inline;
+	padding: 0.5em;
+}
+nav,
+footer {
+	background-color: #efefef;
+	padding: 0.5em 0;
+}
+#feature,
+article {
+	height: 10em;
+	margin-bottom: 1em;
+	background-color: #efefef;
+}
+
+nav {
+	background-color: #03045e;
+}
+#feature {
+	background-color: #023e8a;
+}
+.column1 {
+	background-color: #0077b6;
+}
+.column2 {
+	background-color: #0096c7;
+}
+.column3 {
+	background-color: #00b4d8;
+}
+footer {
+	background-color: #48cae4;
+}
+#feature {
+	background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b");
+	background-size: cover;
+	background-repeat: no-repeat;
+}

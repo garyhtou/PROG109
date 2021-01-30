@@ -20,6 +20,10 @@ const links = [
 			{ title: "Artifact #2", url: "/chess" },
 		],
 	},
+	{
+		title: "Module 04",
+		links: [{ title: "Module Assignment", url: "/module04" }],
+	},
 ];
 
 export default function Home() {
