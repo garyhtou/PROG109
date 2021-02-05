@@ -24,6 +24,10 @@ const links = [
 		title: "Module 04",
 		links: [{ title: "Module Assignment", url: "/module04" }],
 	},
+	{
+		title: "Module 05",
+		links: [{ title: "Module Assignment", url: "/module05" }],
+	},
 ];
 
 export default function Home() {
