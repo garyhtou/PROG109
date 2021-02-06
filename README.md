@@ -1,5 +1,8 @@
-# Programming 109 at Bellevue College
+# PROG 109 (Programming 109) at Bellevue College
 
-The home page is built with Next.js
+I took Programming 109 at Bellevue College during Winter 2021 as a Running Start student (high school dual-enrollment).
 
-Assignments are plain old HTML/CSS/JS (located in [`/public`](/public)).
+This repo contains my coursework.
+
+- The home page is built with Next.js
+- Assignments are plain old HTML/CSS/JS and JQuery (located in [`/public`](/public)).

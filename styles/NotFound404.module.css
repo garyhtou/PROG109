@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 }
 
@@ -25,4 +25,51 @@
 .ufoImageWrapper {
 	width: 30vw;
 	min-width: 15em;
+}
+
+.assignmentsContainer {
+	background: #4f9ffe;
+	background: -webkit-linear-gradient(top left, #4f9ffe, #f5b8b4);
+	background: -moz-linear-gradient(top left, #4f9ffe, #f5b8b4);
+	background: linear-gradient(to bottom right, #4f9ffe, #f5b8b4);
+}
+
+.assignmentsContainer h1 {
+	color: white;
+	text-align: center;
+}
+
+.arrowWrapper {
+	margin-top: 3em;
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.arrow {
+	box-sizing: border-box;
+	height: 3vw;
+	width: 3vw;
+	border-style: solid;
+	border-color: black;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	transition: border-width 200ms ease-in-out;
+}
+
+.arrow:hover {
+	border-bottom-width: 4px;
+	border-right-width: 4px;
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(0, 0.5em);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
 }
