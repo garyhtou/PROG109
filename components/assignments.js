@@ -39,7 +39,10 @@ const links = [
 	},
 	{
 		title: "Module 07",
-		links: [{ title: "Self Paced - Question 3", url: "/module07/self-paced" }],
+		links: [
+			{ title: "Module Assignment", url: "/module07" },
+			{ title: "Self Paced (Question 3)", url: "/module07/self-paced" },
+		],
 	},
 ];
 
