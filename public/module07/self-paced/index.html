@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Week 7: Online Lecture (Self-paced) - Question 3</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Vercel Geist Design Style -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@geist-ui/style@latest/dist/style.css"
+		/>
+		<style>
+			#container {
+				display: flex;
+			}
+			#container div {
+				flex-grow: 1;
+			}
+			main {
+				padding: 2em;
+			}
+
+			#instructions {
+				padding-right: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Week 7: Online Lecture (Self-paced)</h1>
+			<h2>Question 3</h2>
+			<div id="container">
+				<div id="instructions">
+					<p><strong>Instructions:</strong></p>
+					<p>
+						Using the Built-in objects, create your own example where you can
+						use some of the methods for each object. Need ideas?
+					</p>
+					<ul>
+						<li>
+							Receive a string from the user and change all the letters to
+							uppercase (String Object)
+						</li>
+						<li>
+							Modify your portfolio and include the date/time in the footer
+							(Date Object)
+						</li>
+						<li>
+							Create a page so kids can learn the square root of first 20
+							numbers (1-20) (Math Object)
+						</li>
+						<li>
+							Work on your Contact Us form to validate the zipcode and only
+							accept number (Number Object.)
+						</li>
+					</ul>
+					<p>Share your work!</p>
+				</div>
+				<div>
+					<div>
+						<label for="string">Input a string:</label>
+						<input id="string" type="text" />
+					</div>
+					<div>
+						<input
+							type="submit"
+							onclick="uppercase(document.querySelector('#string').value)"
+							value="SEND IT!"
+						/>
+					</div>
+					<p id="output">Your uppercased string will appear here.</p>
+				</div>
+			</div>
+		</main>
+
+		<script src="/module07/self-paced/script.js" async defer></script>
+	</body>
+</html>
