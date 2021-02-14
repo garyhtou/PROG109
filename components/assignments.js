@@ -30,6 +30,13 @@ const links = [
 			{ title: "Portfolio", url: "/portfolio" },
 		],
 	},
+	{
+		title: "Module 06",
+		links: [
+			{ title: "Module Assignment", url: "/module06" },
+			{ title: "Portfolio", url: "/portfolio" },
+		],
+	},
 ];
 
 export default function Assignments(props) {
