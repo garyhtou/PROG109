@@ -15,6 +15,9 @@
 #rhombusControls {
 	padding-right: 3em;
 }
-main {
+section {
 	display: flex;
+}
+main {
+	padding: 1em;
 }
