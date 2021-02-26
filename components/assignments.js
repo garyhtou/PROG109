@@ -44,6 +44,13 @@ const links = [
 			{ title: "Self Paced (Question 3)", url: "/module07/self-paced" },
 		],
 	},
+	{
+		title: "Module 08",
+		links: [
+			{ title: "Module Assignment", url: "/module08" },
+			{ title: "Artifact #4", url: "/module08" },
+		],
+	},
 ];
 
 export default function Assignments(props) {
