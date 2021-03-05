@@ -32,7 +32,7 @@ colorInput.addEventListener("input", (e) => {
 });
 
 // allow size selection
-var size = "10px";
+var size = "75px";
 const sizeInput = document.querySelector("#size");
 // set init size
 sizeInput.value = size.replace("px", "");
