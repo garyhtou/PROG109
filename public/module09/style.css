@@ -1,0 +1,50 @@
+:root {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 2em;
+	height: 100%;
+	background: beige;
+}
+
+.dot {
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+#controls {
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: flex-end;
+}
+#controls * {
+	font-size: 1.15em;
+}
+#controls *:not(:last-child) {
+	margin-right: 0.5em;
+}
+#size {
+	width: 4em;
+}
+
+h1 {
+	margin: 0;
+}
+#instructions {
+	font-size: 0.75em;
+	text-align: right;
+	margin-right: 1em !important;
+}
+* {
+	user-select: none;
+	font-family: sans-serif;
+}

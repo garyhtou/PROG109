@@ -51,6 +51,10 @@ const links = [
 			{ title: "Artifact #4", url: "/module08/artifact4/artifact4.html" },
 		],
 	},
+	{
+		title: "Module 09",
+		links: [{ title: "Module Assignment", url: "/module09" }],
+	},
 ];
 
 export default function Assignments(props) {
