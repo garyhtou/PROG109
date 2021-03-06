@@ -53,7 +53,10 @@ const links = [
 	},
 	{
 		title: "Module 09",
-		links: [{ title: "Module Assignment", url: "/module09" }],
+		links: [
+			{ title: "Module Assignment", url: "/module09" },
+			{ title: "Artifact #5", url: "/module09/artifact5" },
+		],
 	},
 ];
 
