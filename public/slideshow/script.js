@@ -107,7 +107,6 @@ function flip(x = undefined) {
 	// i thought ((currentImg + x) % images.length) would have worked, but i guess javascript's modulo with negative numbers is wonky
 	const nextIndex =
 		(((currentImg + x) % images.length) + images.length) % images.length;
-	console.log(currentImg + " + " + x + " % " + images.length);
 	setImage(nextIndex);
 }
 
