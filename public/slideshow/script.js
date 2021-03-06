@@ -162,5 +162,8 @@ document.addEventListener("keydown", (e) => {
 		case "ArrowLeft":
 			flip(-1);
 			break;
+		case " ":
+			setAutoplay();
+			break;
 	}
 });
