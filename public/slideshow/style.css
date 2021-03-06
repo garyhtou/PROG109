@@ -37,6 +37,7 @@ body {
 }
 .credit-link {
 	color: yellow;
+	text-decoration: none;
 }
 
 #control {
