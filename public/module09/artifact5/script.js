@@ -98,10 +98,16 @@ function setImage(imgIndex) {
  * @param {number} x
  */
 function flip(x = undefined) {
+	// by default, flip +1 if nothing is passed in
 	if (typeof x !== "number") {
 		return flip(1);
 	}
-	const nextIndex = (currentImg + x) % images.length;
+
+	// calculate next index
+	// i thought ((currentImg + x) % images.length) would have worked, but i guess javascript's modulo with negative numbers is wonky
+	const nextIndex =
+		(((currentImg + x) % images.length) + images.length) % images.length;
+	console.log(currentImg + " + " + x + " % " + images.length);
 	setImage(nextIndex);
 }
 
@@ -147,3 +153,15 @@ function updateIndicator(index) {
 		indicatorParent.appendChild(indicator);
 	}
 }
+
+// respond to arrow keys
+document.addEventListener("keydown", (e) => {
+	switch (e.key) {
+		case "ArrowRight":
+			flip(1);
+			break;
+		case "ArrowLeft":
+			flip(-1);
+			break;
+	}
+});
