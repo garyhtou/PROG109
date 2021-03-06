@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Module 10</title>
+		<style>
+			table,
+			td {
+				border: 1px solid black;
+			}
+			img {
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Module 10</h1>
+		<h3>Reviewing: <a href="https://garytou.com">https://garytou.com</a></h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Assessment criteria</strong></td>
+					<td><strong>PASS / FAIL</strong></td>
+					<td><strong>Recommendations</strong></td>
+					<td><strong>Screenshot of results</strong></td>
+				</tr>
+				<tr>
+					<td>
+						Website passes the<a
+							href="https://validator.w3.org/"
+							target="_blank"
+							rel="noreferrer noopener"
+							><span> W3C validator</span></a
+						>
+					</td>
+					<td>FAIL. Numerous inline CSS-related errors.</td>
+					<td>
+						<p>These error results from invalid inline CSS. Two ways to fix:</p>
+						<ul>
+							<li>
+								Check the CSS being outputed by the Wordpress theme and plugins
+								and fix. It looks like it's outputing some css with the
+								declaration, but no value. For example,
+								<code>background: ;</code>. It's declaring
+								<code>background</code>, but never actually provided a value for
+								the background. This causes a CSS parse error.
+							</li>
+							<li>
+								Don't use Wordpress or pick a theme/plugins that are careful
+								about validation.
+							</li>
+						</ul>
+					</td>
+					<td>
+						<img src="/module10/images/w3c.png" alt="W3C Validator Result" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Website passes
+						<a
+							href="https://jigsaw.w3.org/css-validator/"
+							target="_blank"
+							rel="noreferrer noopener"
+							><span>CSS validator</span></a
+						>
+					</td>
+					<td>FAIL. Numerous CSS-related errors.</td>
+					<td>
+						<p>
+							These error are very similar to the ones pointed out by the W3C
+							HTML Validator. Two ways to fix:
+						</p>
+						<ul>
+							<li>
+								Check the CSS being outputed by the Wordpress theme and plugins
+								and fix. It looks like it's outputing some css with the
+								declaration, but no value. In addition, it's using some
+								browser/vendor specific CSS which W3C considers as an
+								error/warning.
+							</li>
+							<li>
+								Don't use Wordpress or pick a theme/plugins that are careful
+								about validation.
+							</li>
+						</ul>
+					</td>
+					<td>
+						<img
+							src="/module10/images/css_val.png"
+							alt="CSS Validator Result"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Website status using
+						<a
+							title="SiteImprove - Chrome Extension"
+							href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?hl=en-US"
+							target="_blank"
+							rel="noreferrer noopener"
+							><span>SiteImprove</span></a
+						>
+					</td>
+					<td>FAIL. Low link contrast and links with the same name</td>
+					<td>
+						<p>There are two errors outlined by Siteimprove:</p>
+						<ol>
+							<li>
+								Low link contrast. The light blue links pointing to FBLA, DECA,
+								Hack Club, and TEDx have low color contrast compared to the gray
+								background. Two ways to fix:
+								<ul>
+									<li>Make the link color lighter</li>
+									<li>Make the background darker</li>
+								</ul>
+							</li>
+							<li>
+								There are two link on the page named <strong>FBLA</strong>.
+								Siteimprove is pointing this out as an error. Two wasy to fix:
+								<ul>
+									<li>
+										Rename one or both links to be more specific as to where
+										they point to. For example
+										<strong>FBLA Homepage</strong>.
+									</li>
+									<li>Remove one of the links</li>
+								</ul>
+							</li>
+						</ol>
+					</td>
+					<td>
+						<img
+							src="/module10/images/siteimprove.png"
+							alt="Siteimprove Result"
+						/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -58,6 +58,10 @@ const links = [
 			{ title: "Artifact #5", url: "/slideshow" },
 		],
 	},
+	{
+		title: "Module 10",
+		links: [{ title: "Module Assignment", url: "/module10" }],
+	},
 ];
 
 export default function Assignments(props) {
