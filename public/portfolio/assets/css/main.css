@@ -2766,6 +2766,7 @@ a.image img {
 	-webkit-transition: -webkit-transform 0.2s ease-out;
 	-ms-transition: -ms-transform 0.2s ease-out;
 	transition: transform 0.2s ease-out;
+	border: 1px solid #d5d5d5;
 }
 
 a.image:hover img {
