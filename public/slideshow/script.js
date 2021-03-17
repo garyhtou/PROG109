@@ -2,52 +2,52 @@
 const images = [
 	{
 		url:
-			"https://images.unsplash.com/photo-1586065695931-44ebab9fca13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-		alt: "Lion Dance",
-		description: "Lion Dance at Seattle Center Armory",
+			'https://images.unsplash.com/photo-1586065695931-44ebab9fca13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+		alt: 'Lion Dance',
+		description: 'Lion Dance at Seattle Center Armory',
 		credit: {
-			name: "Gary Tou",
-			link: "https://unsplash.com/@garyhtou",
+			name: 'Gary Tou',
+			link: 'https://unsplash.com/@garyhtou',
 		},
 	},
 	{
 		url:
-			"https://images.unsplash.com/photo-1586063159125-5757e6092379?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1920&h=1080&q=80",
-		alt: "Waterfall",
-		description: "Green luscious waterfall",
+			'https://images.unsplash.com/photo-1586063159125-5757e6092379?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1920&h=1080&q=80',
+		alt: 'Waterfall',
+		description: 'Green luscious waterfall',
 		credit: {
-			name: "Gary Tou",
-			link: "https://unsplash.com/@garyhtou",
+			name: 'Gary Tou',
+			link: 'https://unsplash.com/@garyhtou',
 		},
 	},
 	{
 		url:
-			"https://images.unsplash.com/photo-1586063116826-c9fe0f281a64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
-		alt: "Whistler Suspension Bridge",
-		description: "Whistler Suspension Bridge",
+			'https://images.unsplash.com/photo-1586063116826-c9fe0f281a64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+		alt: 'Whistler Suspension Bridge',
+		description: 'Whistler Suspension Bridge',
 		credit: {
-			name: "Gary Tou",
-			link: "https://unsplash.com/@garyhtou",
+			name: 'Gary Tou',
+			link: 'https://unsplash.com/@garyhtou',
 		},
 	},
 	{
 		url:
-			"https://images.unsplash.com/photo-1546145213-f22b87cd1e8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-		alt: "Flower",
-		description: "Red and white flower",
+			'https://images.unsplash.com/photo-1546145213-f22b87cd1e8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+		alt: 'Flower',
+		description: 'Red and white flower',
 		credit: {
-			name: "Gary Tou",
-			link: "https://unsplash.com/@garyhtou",
+			name: 'Gary Tou',
+			link: 'https://unsplash.com/@garyhtou',
 		},
 	},
 	{
 		url:
-			"https://images.unsplash.com/photo-1555667865-f4be32e8cc29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-		alt: "Hydroflask",
-		description: "Green hydroflask",
+			'https://images.unsplash.com/photo-1555667865-f4be32e8cc29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+		alt: 'Hydroflask',
+		description: 'Green hydroflask',
 		credit: {
-			name: "Gary Tou",
-			link: "https://unsplash.com/@garyhtou",
+			name: 'Gary Tou',
+			link: 'https://unsplash.com/@garyhtou',
 		},
 	},
 ];
@@ -74,14 +74,14 @@ setAutoplay(true);
  */
 function setImage(imgIndex) {
 	const imageProps = images[imgIndex];
-	const image = document.querySelector("#slideshow-img");
+	const image = document.querySelector('#slideshow-img');
 	image.src = imageProps.url;
 	image.alt = imageProps.alt;
 
-	const description = document.querySelector("#description");
+	const description = document.querySelector('#description');
 	description.innerText = imageProps.description;
 
-	const credit = document.querySelector("#credit");
+	const credit = document.querySelector('#credit');
 	credit.innerHTML = `Photo by <a href="${imageProps.credit.link}" target="_blank" class="credit-link">${imageProps.credit.name}</a>`;
 
 	currentImg = imgIndex;
@@ -99,7 +99,7 @@ function setImage(imgIndex) {
  */
 function flip(x = undefined) {
 	// by default, flip +1 if nothing is passed in
-	if (typeof x !== "number") {
+	if (typeof x !== 'number') {
 		return flip(1);
 	}
 
@@ -116,18 +116,18 @@ function flip(x = undefined) {
  * @param {boolean} [set] set boolean of autoplay
  */
 function setAutoplay(set = undefined) {
-	autoplay = typeof set !== "boolean" ? !autoplay : set;
+	autoplay = typeof set !== 'boolean' ? !autoplay : set;
 
-	const icon = document.querySelector("#control-autoplay > i");
+	const icon = document.querySelector('#control-autoplay > i');
 	if (autoplay) {
 		autoplayInterval = setInterval(flip, autoplayDuration);
-		icon.className = "fas fa-pause";
-		console.log("AUTOPLAY IS ON");
+		icon.className = 'fas fa-pause';
+		console.log('AUTOPLAY IS ON');
 	} else {
 		autoplayInterval && clearInterval(autoplayInterval);
 		autoplayInterval = undefined;
-		icon.className = "fas fa-play";
-		console.log("AUTOPLAY IS OFF");
+		icon.className = 'fas fa-play';
+		console.log('AUTOPLAY IS OFF');
 	}
 }
 
@@ -136,15 +136,15 @@ function setAutoplay(set = undefined) {
  * @param {number} index
  */
 function updateIndicator(index) {
-	const indicatorParent = document.querySelector("#indicator");
+	const indicatorParent = document.querySelector('#indicator');
 	// remove all children - not very efficent... but it works
-	indicatorParent.innerHTML = "";
+	indicatorParent.innerHTML = '';
 
 	// add back children with appropicate indicator type and listener
 	for (let i = 0; i < images.length; i++) {
-		const indicator = document.createElement("i");
-		indicator.className = `${i === index ? "fas" : "far"} fa-circle`;
-		indicator.addEventListener("click", () => {
+		const indicator = document.createElement('i');
+		indicator.className = `${i === index ? 'fas' : 'far'} fa-circle`;
+		indicator.addEventListener('click', () => {
 			setImage(i);
 		});
 		// i === index ? (indicator.style.color = "yellow") : null; // doesn't look great
@@ -154,15 +154,15 @@ function updateIndicator(index) {
 }
 
 // respond to arrow keys
-document.addEventListener("keydown", (e) => {
+document.addEventListener('keydown', (e) => {
 	switch (e.key) {
-		case "ArrowRight":
+		case 'ArrowRight':
 			flip(1);
 			break;
-		case "ArrowLeft":
+		case 'ArrowLeft':
 			flip(-1);
 			break;
-		case " ":
+		case ' ':
 			setAutoplay();
 			break;
 	}

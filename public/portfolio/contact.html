@@ -86,6 +86,9 @@
 					<header class="major">
 						<h2>Contact</h2>
 					</header>
+					<div style="width: 100%; text-align: center">
+						<img src="images/giphy.gif" alt="gif" />
+					</div>
 					<p>
 						Hello! I'm always open to chatting with some new friendly faces 😁.
 						I invite you to reach out via my contact form below or via social
@@ -102,7 +105,8 @@
 			<!-- TODO: validate form -->
 			<footer id="footer">
 				<section>
-					<form method="get" action="thankyou.html">
+					<form method="get" action="thankyou.html" id="myform">
+						<div id="errorMessages"></div>
 						<div class="fields">
 							<div class="field">
 								<label for="name">Name</label>
@@ -192,5 +196,7 @@
 		<script src="/portfolio/assets/js/breakpoints.min.js"></script>
 		<script src="/portfolio/assets/js/util.js"></script>
 		<script src="/portfolio/assets/js/main.js"></script>
+
+		<script src="/portfolio/assets/js/formvalidation.js"></script>
 	</body>
 </html>
