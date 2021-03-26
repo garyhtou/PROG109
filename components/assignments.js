@@ -1,66 +1,73 @@
-import styles from "../styles/Assignments.module.css";
+import styles from '../styles/Assignments.module.css';
 
 const links = [
 	{
-		title: "Module 01",
+		title: 'Module 01',
 		links: [
-			{ title: "Module Webpage", url: "/module01" },
-			{ title: "Artifact #1", url: "/module01/artifact01.html" },
+			{ title: 'Module Webpage', url: '/module01' },
+			{ title: 'Artifact #1', url: '/module01/artifact01.html' },
 		],
 	},
 	{
-		title: "Module 02",
-		links: [{ title: "Module Assignment", url: "/module02" }],
+		title: 'Module 02',
+		links: [{ title: 'Module Assignment', url: '/module02' }],
 	},
 	{
-		title: "Module 03",
+		title: 'Module 03',
 		links: [
-			{ title: "Module Assignment", url: "/module03" },
-			{ title: "Artifact #2", url: "/chess" },
+			{ title: 'Module Assignment', url: '/module03' },
+			{ title: 'Artifact #2', url: '/chess' },
 		],
 	},
 	{
-		title: "Module 04",
-		links: [{ title: "Module Assignment", url: "/module04" }],
+		title: 'Module 04',
+		links: [{ title: 'Module Assignment', url: '/module04' }],
 	},
 	{
-		title: "Module 05",
+		title: 'Module 05',
 		links: [
-			{ title: "Module Assignment", url: "/module05" },
-			{ title: "Portfolio", url: "/portfolio" },
+			{ title: 'Module Assignment', url: '/module05' },
+			{ title: 'Portfolio', url: '/portfolio' },
 		],
 	},
 	{
-		title: "Module 06",
+		title: 'Module 06',
 		links: [
-			{ title: "Module Assignment", url: "/module06" },
-			{ title: "Artifact #3", url: "/module06/rhombus" },
+			{ title: 'Module Assignment', url: '/module06' },
+			{ title: 'Artifact #3', url: '/module06/rhombus' },
 		],
 	},
 	{
-		title: "Module 07",
+		title: 'Module 07',
 		links: [
-			{ title: "Module Assignment", url: "/module07" },
-			{ title: "Self Paced (Question 3)", url: "/module07/self-paced" },
+			{ title: 'Module Assignment', url: '/module07' },
+			{ title: 'Self Paced (Question 3)', url: '/module07/self-paced' },
 		],
 	},
 	{
-		title: "Module 08",
+		title: 'Module 08',
 		links: [
-			{ title: "Module Assignment", url: "/module08" },
-			{ title: "Artifact #4", url: "/module08/artifact4/artifact4.html" },
+			{ title: 'Module Assignment', url: '/module08' },
+			{ title: 'Artifact #4', url: '/module08/artifact4/artifact4.html' },
 		],
 	},
 	{
-		title: "Module 09",
+		title: 'Module 09',
 		links: [
-			{ title: "Module Assignment", url: "/module09" },
-			{ title: "Artifact #5", url: "/slideshow" },
+			{ title: 'Module Assignment', url: '/module09' },
+			{ title: 'Artifact #5', url: '/slideshow' },
 		],
 	},
 	{
-		title: "Module 10",
-		links: [{ title: "Module Assignment", url: "/module10" }],
+		title: 'Module 10',
+		links: [{ title: 'Module Assignment', url: '/module10' }],
+	},
+	{
+		title: 'Final',
+		links: [
+			{ title: 'Part 1: Portfolio', url: '/portfolio' },
+			{ title: 'Part2: Questions & Presentation', url: '/final2' },
+		],
 	},
 ];
 
