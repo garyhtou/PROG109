@@ -4,5 +4,9 @@ I took Programming 109 at Bellevue College during Winter 2021 as a Running Start
 
 This repo contains my coursework.
 
-- The home page is built with Next.js
-- Assignments are plain old HTML/CSS/JS and JQuery (located in [`/public`](/public)).
+- The home page is built with [Next.js](http://nextjs.org/), an amazing React Framework
+- Assignments are plain old HTML/CSS/JS (located in [`/public`](/public)).
+
+<br/>
+
+**Professor:** Adam Brehm
